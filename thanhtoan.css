@@ -1,0 +1,13 @@
+.content{
+	width: 1200px;
+	height: 530px;
+	line-height: 20px;
+    margin: 37px 24px;
+    line-height: 1.4;
+}
+.tt1{
+font-weight: bold;
+}
+.content h2{
+    padding: 12px 0;
+}

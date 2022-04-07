@@ -1,0 +1,80 @@
+.cart_content{
+    width: 80%;
+    height: 300px;
+    margin: 12px auto;
+}
+.margin138{
+    margin-top: 138px;
+}
+.youcan{
+    font-size: 17px;
+    text-decoration: underline;
+    display: inline-block;
+}
+.cart_content a{
+    text-decoration: none;
+    color: black;
+}
+.cart_top{
+    display: inline-block;
+    font-size: 12px;
+}
+.cart_top a+a{
+    margin-left: 8px;
+    text-decoration: underline;
+}
+.cart_mid{
+    text-align: center;
+    height: 253px;
+    margin: 61px auto;
+    width: 82%;
+    border-bottom: 1px solid #ccc;
+}
+.cart_mid i{
+    font-size: 120px;
+}
+.cart_mid p{
+    font-size: 14px;
+    margin: 18px;
+}
+.cart_mid a{
+    font-size: 14px;
+    margin: 18px;
+}
+.count{
+    display: inline-block;
+    position: absolute;
+    right: 17px;
+    bottom: 83px;
+    background-color: white;
+    width: 41px;
+    height: 23px;
+    padding-left: 6px;
+}
+.note{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+.note .note-item{
+    width: 30%;
+    text-align: center;
+    height: 213px;
+    background-color: #f4f4f4;
+    font-weight: 600;
+}
+.note .note-item i{
+    font-size: 46px;
+    margin: 46px 0 0;
+}
+.note .note-item h3{
+    font-size: 17px;
+    margin: 17px 0 8px;
+    opacity: 0.8;
+}
+.note .note-item p{
+    font-size: 14px;
+    margin: 8px 0;
+    opacity: 0.5;
+}

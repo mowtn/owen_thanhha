@@ -1,0 +1,538 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth; /* hiệu ứng cuộn */
+
+
+}
+/*
+    1. vị trí
+    2. kích thước
+    3. màu sắc
+    4. kiểu dáng(kiểu chữ, hình tròn, vuông....)
+*/
+.clear{
+    clear: both;
+    /* sử dụng khắc phục lỗi thẻ cha không ôm được thẻ con khi thẻ con dùng float:*/
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background-color: black;
+    z-index: 1;
+    align-items: center;
+}
+#nav{
+    display: inline-block;
+}
+#nav, .subnav{
+    list-style-type: none;
+}
+ #nav >li{
+    display: inline-block;
+}
+#nav >li:hover >a{
+    color: #000 ;
+    background-color: #ccc;
+    display: inline-block; 
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav li {
+
+    position: relative;
+}
+.ti-angle-down{
+    display: inline-block;
+    font-size: 12px;
+    color: #fff;
+}
+#nav >li >a{
+    color: #fff;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    text-transform: uppercase;
+
+}
+#nav .subnav{
+    display: none;
+    position: absolute;
+    background-color: white;
+   box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+#nav .subnav>li>a{
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 12px;
+    color: black;
+    line-height: 38px;
+    
+}
+#nav .subnav>li:hover >a{
+    color: black;
+    background-color: silver;
+    display: block
+   
+}
+.button-search{
+    display: inline-block;
+    color: #fff;
+    float: right;
+    font-size: 21px; 
+    
+}
+.button-search .ti-search{
+    line-height: 46px;/* khi cho chiều cao bằng chiều cao của thẻ cha thì chữ sẽ được căn ở giữa*/
+    padding: 0 16px;
+}
+.button-search:hover{
+    background-color: #f44336;
+    cursor: pointer;/* hiển thị ra con trỏ khi hover*/
+}
+#slider{
+    box-sizing: border-box;
+    background: url(https://www.w3schools.com/w3images/chicago.jpg) top center / cover no-repeat ;
+    margin: 46px 0px;
+    padding-top: 50%;
+    width: 100%;
+    position: relative;
+    
+}
+#slider .text-slider{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    margin: 42px;
+    color: #ccc;
+}
+#slider .text-slider h2{
+    font-size: 21px;
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+#content .section-content{
+    width: 800px;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content .section-content .h2-section{
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+
+#content .section-content .in-nghieng{
+    font-size: 15px;
+}
+#content .section-content .doanvan{
+    text-align: justify;
+    font-size: 15px;
+}
+.tour-section{
+    background-color: black;
+
+    font-size: 15px;
+}  
+.content-section{
+    margin: 0 82.4px;
+    padding: 64px 16px;
+    color: #fff;
+    text-align: center;
+}
+.content-section h2{
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.content-section p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.ticket-list{
+    margin: 0 250px;
+    padding: 46px; 
+}
+.ticket-list li{
+    padding: 8px 16px;
+    color: #757575;
+    background-color: #fff;
+    text-align: start;
+    border-bottom: 1px solid #ddd;
+    list-style: none;
+    margin: 0 98.4px;
+}
+.ticket-list li .sould{
+    color: #fff;
+    background-color: #f44336;
+    margin-left: 16px;
+    padding: 2px 8px;
+}
+.ticket-list li .sould-3{
+    color: #fff;
+    background-color: #000;
+    padding: 1px 8px;
+    border-radius: 50%;
+    float: right;
+}
+
+.places-list{
+    padding: 8px 8px;
+    margin: 0px 370px;
+    clear: both;
+    
+}
+.place-item{
+    float: left;
+    width: 33.3333%;
+    padding: 0 16px;
+    margin-bottom: 50px;
+    display: inline-block;
+    
+}
+.place-img{
+    width: 100%;
+    display: block;
+}
+.place-img:hover{
+    opacity: 0.6;
+}
+.content-place{
+    background-color: #fff;
+    padding: 16px 16px;
+}
+.place-heading{
+    margin: 15px 0;
+   
+    font-weight: 500;
+}
+.place-time{
+    margin: 15px 0;
+}
+.place-desc{
+    margin: 15px 0;
+}
+.place-btn{
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    margin-top: 22px;
+    display: inline-block;
+    
+}
+.place-btn:hover{
+    background-color: #ccc;
+    color: #000;
+    border-radius: 15%;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-content{
+    min-height: 343px;
+    width: 900px;
+    background-color: seashell;
+    
+}
+.modal-header{
+    width: 100%;
+    height: 129px;
+    background-color: #009688;
+    position: relative;
+}
+
+.ti-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 16px;
+    font-size: 24px;
+    opacity: 0.8;
+    line-height: 36px;
+}
+.ti-close:hover{
+    background-color: #ccc;
+    opacity: 1;
+}
+.ti-bag{
+   font-size: 30px;
+   color: #fff; 
+   font-family: "Segoe UI",Arial,sans-serif;
+   letter-spacing: 4px;
+   display: block;
+   text-align: center;
+   padding-top: 40px; 
+
+}
+.ti-shopping-cart{
+    width: 100%;
+}
+.modal{
+    display: none;
+}
+.modal.open{
+    display: flex;
+}
+.modal-input{
+    width: 100%;
+    border: 1px solid #ccc;
+    line-height: 38.5px;
+    margin: 4px 4px;
+}
+.modal-main {
+    margin: 15px 16px;
+    height: 188px;
+    position: relative;
+    max-width: calc(100%-32px);
+}
+.ti-user{
+    width: 100%;
+}.modal-label{
+   margin:  4px;
+   line-height: 42.5px;
+}
+.modal-pay{
+    width: 96.5%; 
+    align-items: flex-start;
+    background-color: #009688;
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 26px;
+    line-height: 22.5px;
+    padding: 16px;
+    text-align: center; 
+    margin: 0 20px;
+    margin-top: 15px;
+    margin-bottom: 26px;
+   
+}
+.ti-check{
+    font-size: 26px;
+}
+
+.modal-footer{
+    margin-right: 18px;
+    float: right;
+    margin-bottom: 25px;
+}
+.modal-footer a{
+    color: #2196f3;
+}
+
+
+#contact{
+    font-size: 15px;
+    line-height: 22.5px;
+    margin: 0px 359.6px;
+    padding: 64px 16px;
+}
+
+#contact .contact-h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    letter-spacing: 4px;
+    line-height: 45px;
+    margin: 10px 0px;
+    text-align: center;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+#contact .contact-p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+    font-size: 15px;    
+    line-height: 22.5px;    
+    margin: 5px 0px;    
+    text-align: center; 
+    opacity: 0.8;
+}
+#contact .contact-info{
+    display: inline-block;
+    width: 100%;
+    font-size: 15px;
+    line-height: 22.5px;
+    padding: 32px 0px;
+}
+#contact .location-contact{
+    width: 50%;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 27px;
+    margin: 0px 0px 16px;
+}
+
+#contact .para-location{
+    display: inline-block;
+}
+#contact .contact-input{
+    display: inline-block;
+    width: 50%;
+    float: right;
+}
+#contact .nameandmail{
+    width: 100%;
+    display: inline-block;
+}
+
+#contact .messeage{
+    width: 100%;
+    display: inline-block;
+    background-color: #ffffff;
+    border-color: #cccccc;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 15px;
+    line-height: 22.5px;
+    padding: 8px;
+    margin-top: 8px;
+}
+#contact .send-contact{
+   float: right;
+}
+#contact .nameandmail-name{
+    background-color: #ffffff;
+    border-color: #cccccc;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 15px;
+    line-height: 22.5px;
+    padding: 8px;
+    width: calc(99%/2);
+    display: inline-block;
+}
+#contact .send-contact{
+    margin: 16px 0;
+    align-items: flex-start;
+    background-color: #000000;
+    color:  #ffffff;
+    font-size: 15px;
+    line-height: 22.5px;
+    padding: 8px 16px;
+    text-align: center;
+    border: none;
+}
+#contact .send-contact:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+.map img{
+    width: 100%;
+}
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+    align-items: center;
+    
+}
+#footer .socials-list{
+    font-size: 24px;
+    
+}
+
+#footer .socials-list a{
+    color: #757575;
+    text-decoration: none;
+}
+
+#footer .socials-list a:hover{
+    opacity: 0.8;
+}
+#footer .end-footer{
+    font-size: 15px;
+    line-height: 22.5px;
+    margin: 15px 0px;
+    text-align: center;
+    color: #757575;
+}
+.tap_ri{
+    display: none;
+  
+    width: 28px;
+    height: 28px;
+    font-size: 20px;
+}    
+.ti-align-justify{
+    display: inline-block;
+    line-height: 14px;
+    color:  white;
+}
+.moblie-over{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color:  rgba(0, 0, 0, 0.3);
+    display: none;
+}
+#nav-mobile{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 320px;
+    background-color: #ddd;
+    transform: translateX(-100%);/*di chuyển khối sang trái*/
+}
+#nav-mobile li{
+    width: 100%;
+}
+#nav-mobile li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 29px 43px;
+    color: #333;
+    font-size: 24px;
+}  
+.ti-layout-grid3{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #000;
+    display: block;
+    padding: 14px 14px;
+}
+#check-boxx:checked ~ .moblie-over{
+    display: block;
+}/*~ trỏ đến thẻ hay class tiếp theo cùng cấp*/
+#check-boxx:checked ~ #nav-mobile{
+    transform: translateX(0);
+}
+
+/*not pc*/
+@media only screen and (max-width: 1023px){
+    .tap_ri{
+        display: inline-block;
+        line-height: 46px;
+        padding-left: 15px ;
+    }
+    #nav{
+        display: none;
+    }
+}

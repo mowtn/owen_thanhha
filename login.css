@@ -1,0 +1,96 @@
+.body_login{
+    height: 479px;
+    background-color: #f2f2f2;
+    margin-top: 8.5%;
+}
+.content-login{
+    width: 58%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.login_top{
+    height: 74px;
+    width: 100%;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+.login_top a{
+    text-decoration: none;
+    color: black;
+    margin-right: 34px;
+}
+.login_bottom{
+    height: 360px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgb(0 0 0 / 22%) 0px 3px 8px;
+}
+.bt-top{
+    width: 48%;
+    margin: 32px auto;
+    height: 35%;
+}
+.bt-top span{
+    color: red;
+}
+.lock{
+    display: flex;
+    margin-top: 22px;
+    font-size: 12px;
+    margin-left: -125px;
+    align-items: center;
+}
+.lock a{
+    text-decoration: none;
+    color: black;
+    margin-left: 4px;
+}
+.lock p{
+    margin-left: 4px;
+}
+.login_bottom .bt-top input{
+    width: 75%;
+    height: 32%;
+    margin-left: 35px;
+    padding-left: 1em;
+}
+.login_bottom  .bt-top p{
+    margin: 8px 0;
+    font-size: 12px;
+    margin-left: 35px;
+}
+.sp-item{
+    display: flex;
+}
+.bt-sp{
+    width: 40%;
+    height: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12px;
+    padding-right: 36px;
+}
+.bt-sp button{
+    background-color: black;
+    color: #fff;
+    width: 76%;
+    height: 40%;
+}
+.bt-sp p{
+    font-size: 12px;
+    margin: 12px;
+}
+.sp-item a{
+    text-decoration: none;
+    color: black;
+    margin: 0 12px;
+}
