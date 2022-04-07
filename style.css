@@ -200,7 +200,7 @@ body{
        left: -45px;
        align-items: center;
        z-index: 2;
-       background-image: url(../image/Screenshot\ 2022-03-13\ 215235.png);
+       background-image: url(./image/Screenshot\ 2022-03-13\ 215235.png);
    }
    .header__nav li{
         list-style-type: none;
